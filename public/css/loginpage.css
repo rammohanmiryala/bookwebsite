@@ -1,0 +1,71 @@
+body,
+html {
+    font-family: 'Mohave', sans-serif;
+    /* height: 100%; */
+    /* margin: 0;
+    
+    top: 0; */
+
+    /* background-color:black; */
+}
+
+.loginpage {
+    background-color: #1c4141;
+    margin: 0 auto;
+    border-radius: 10px;
+    /* margin-top: 10px; */
+    box-shadow: rgba(168, 168, 168, 0.63) 0px 0px 16px; 
+    color: rgb(223, 215, 215);
+    width: 50%;
+    position: relative;
+    top: -40px;
+    
+}
+.titleform{
+    padding:20px;
+    font-size: 25px;
+
+}
+.signup{
+
+    border-left:2px solid rgb(223, 215, 215);
+    
+
+}
+.signup,.login{
+
+    font-family: 'Mohave', sans-serif;
+}
+.signup-form{
+    padding-left:10px;
+}
+.formfeild{
+height:5vh;
+}
+
+input:focus{
+    background-color:rgb(182, 248, 223);
+
+}
+
+.buttons {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 60px;
+    color: rgb(194, 194, 186);
+    background-color: #1c4d4d;
+    text-align: center;
+    cursor: pointer;
+    border-radius:5px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    
+    font-size:20px;
+   
+    
+}
+.buttons:hover {
+    background-color:rgb(182, 248, 223);
+    color: rgb(77, 67, 67);
+   
+}

@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:500,100,300,700,400");
+
+.logoh {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 0%;
+    margin: 10px;
+
+    /* border: 1px solid black; */
+
+
+
+}
+
+.banner1 {
+    background-color: rgb(223, 215, 215);
+
+
+}
+
+.profilebuttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.loginbuttons {
+    display: flex;
+    justify-content: right;
+
+}
+
+.topcolor {
+    background-color: #1c4141;
+    ;
+    border-bottom: 3px solid rgb(235, 186, 25);
+}
+
+.book-title,
+.bookdate,
+.book-cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: 'Mohave',
+        sans-serif;
+    color: rgb(63, 62, 62);
+
+}
+
+
+.bookdate {
+    padding-top: 30px;
+    font-size: 30px;
+
+}
+
+.book-cover {
+
+    padding-top: 30px;
+
+}
+
+.Author,
+
+.book-title {
+    padding-top: 20px;
+}
+
+.Synopsis {
+    margin-top: 10px;
+}
+
+.subtitle {
+    font-family: 'Mohave',
+        sans-serif;
+}
+
+.textsize {
+
+    font-size: 20px;
+    color: #1c4141;
+    font-weight: bold;
+    padding-right: 15px;
+}
+
+.Author,
+.Synopsis,
+.booklink {
+
+    font-size: 20px;
+    text-justify: initial;
+
+
+}
+
+.bookborder {
+    border-bottom: 1px dashed rgb(146, 143, 143);
+    padding-bottom: 20px;
+
+}
+
+.inputfeild {
+    background-color: rgb(185, 185, 185);
+}
+
+.inputfeild:focus {
+    background-color: rgb(182, 248, 223);
+
+
+}
+
+.textsize1 {
+    padding-bottom: 5px;
+
+}
+
+.review-styling {
+    background-color: rgb(224, 226, 225);
+    border-radius: 20px;
+}
+
+.icon {
+    margin-right: 5px;
+
+}
+
+.btncolor {
+    background-color: #c7381f;
+    color: antiquewhite
+}
+
+.btncolorcreate {
+    background-color: #236429;
+    color: antiquewhite
+}

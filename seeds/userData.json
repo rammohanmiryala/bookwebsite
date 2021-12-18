@@ -1,0 +1,39 @@
+[
+  {
+    "user_id": 1,
+    "email": "ajayk@hotmail.com",
+    "password": "iamasuperstar44",
+    "name": "AjayK"
+  },
+  {
+    "user_id": 2,
+    "email": "madcosway@hotmail.com",
+    "password": "iamamazing78",
+    "name": "MadCosway"
+  },
+  {
+    "user_id": 3,
+    "email": "ramm@hotmail.com",
+    "password": "iamexcellent3",
+    "name": "Ramm"
+  },
+  {
+    "user_id": 4,
+    "email": "marcusm@hotmail.com",
+    "password": "iamabraverabbit4",
+    "name": "MarcusM"
+  },
+  {
+    "user_id": 5,
+    "email": "wagnerl@hotmail.com",
+    "password": "iamverysmart1",
+    "name": "WagnerL"
+  },
+  {
+    "user_id": 6,
+    "email": "benf@hotmail.com",
+    "password": "iamalsoverysmart1",
+    "name": "BenF"
+  }
+]
+

@@ -1,0 +1,31 @@
+<header class=" topcolor">
+  <div class="container row  profilebuttons">
+    <div class="col-6 ">
+      <a href="/"><img src="./images/Braverabbits.png" class="img-fluid logoh" alt="..."><img> THE BOOK WAS BETTER </a>
+    </div>
+    <div class="col-6 loginbuttons ">
+      {{#if logged_in}}
+      <a href="/book" class="buttons buttontext">Book</a> |
+      <button class="no-button buttons style=" id="logout">logout</button>      
+      {{else}}
+      <a href="/login" class="buttons buttontext">login/Register</a>
+      {{/if}}
+    </div>
+  </div>
+</header>
+<main>
+  <div class="container">
+
+    
+    <div>
+      <h1 class=" bookdate">Welcome, {{name}}!</h1>
+      <div class="bookborder"></div>
+      <br>
+      <h2>Your details:</h2>
+      <p class='Author'><span class="textsize">Name: </span>{{name}}</p>
+      <p class='Synopsis'><span class="textsize">Email:</span>{{email}}</p>
+    </div>
+
+  </div>
+</main>
+

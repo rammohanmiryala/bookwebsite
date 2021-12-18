@@ -1,0 +1,78 @@
+<div class="banner1">
+</div>
+
+<header class=" topcolor">
+  <div class="container row  profilebuttons">
+    <div class="col-6 ">
+      <img src="./images/Braverabbits.png" class="img-fluid logoh" alt="..."><img>
+    </div>
+    <div class="col-6 loginbuttons ">
+      {{#if logged_in}}
+      <a href="/profile" class="buttons buttontext">Profile</a> |
+      <button class="no-button buttons style=" id="logout">logout</button>
+      {{else}}
+      <a href="/login" class="buttons buttontext">login/Register</a>
+      {{/if}}
+    </div>
+  </div>
+</header>
+<main>
+  <div class="container">
+
+    <div class="bookborder">
+      <h1 class=" bookdate">Published month : December 2021</h1>
+      <img class='book-cover' src='{{book.img_url}}' />
+      <h2 class='book-title'>{{book.name}} - {{book.year}}</h2>
+      <p class='Author'><span class="textsize">Author: </span>{{book.author}}</p>
+      <p class='Synopsis'><span class="textsize">Synopsis:</span>{{book.synopsis}}</p>
+      <p class='booklink'><a href="{{book.purchase_link}}" , target="_blank">Purchase Here</a></p>
+    </div>
+    <div>
+      <form class='new-review-form'>
+        <fieldset>
+          <div class='form-group'>
+            <label for='review-desc' class='form-label mt-4 textsize'>Description:</label>
+            <textarea class='form-control inputfeild' id='review-desc' name='review-desc' rows='3'></textarea>
+          </div>
+
+          <div class='form-group'>
+            <div for='review-rating' class="rateyo" data-rateyo-rating="1" data-rateyo-num-stars="5" data-rateyo-score="5" ></div>
+            {{!-- <span class='score' >0</span> --}}
+            <p> Rating: <span class='result' id='review-rating'>0</span> </p>
+          </div>
+
+          {{!-- <div class='form-group'>
+            <label for='review-rating' class="textsize">Rate the book (Choose rating between 1-5):</label>
+            <input type='number' min='1' max='5' class='form-control' id='review-rating' style="width:100px;" />
+          </div> --}}
+
+          <div class='form-group'>
+            <button type='submit' class='btn btncolorcreate'>Create</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <div>
+      {{#if book.reviews.length}}
+      <div class='review-list'>
+        <h3>Current Reviews:</h3>
+        {{#each book.reviews as |review|}}
+        <div class='row mb-2 review-styling'>
+          <div class='col'>
+            <p class="textsize1"><span>Description: </span>{{review.review_text}}</p>
+            <p class="textsize1"><span>Rating: </span>{{review.rating}}</p>
+            <p class="textsize1"><span>Added by:</span> {{review.user.name}}</p>
+            <button class="btn btn-sm btncolor" data-id='{{review.review_id}}'> <i class="fas fa-trash icon"></i>
+              DELETE</button>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+      {{/if}}
+    </div>
+  </div>
+
+</main>
+
+
+<script src='./js/review.js'></script>
